@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="#" type="image/x-icon">
+  <link rel="shortcut icon" href="#">
+  <link rel="stylesheet" href="./scss/main.css">
+  <title>Document</title>
+</head>
+<body>
+  <div class="preloader">
+    <div class="preloader__row">
+      <div class="preloader__item"></div>
+      <div class="preloader__item"></div>
+    </div>
+  </div>
+  <header class="header">
+    <div class="container header__wrapper">
+      <a href="." class="logo">SongBird</a>
+      <nav class="header-nav">
+        <ul class="menu">
+          <li class="menu__item">
+            <a href="." class="menu__link">Home</a>
+          </li>
+          <li class="menu__item">
+            <a href="." class="menu__link">Gallery</a>
+          </li>
+          <li class="menu__item">
+            <a href="pages/quiz.html" class="menu__link">Game</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="sound" title = "mute the background sound">
+        <span class="sound-icon icon-sound-on"></span>
+      </div>
+      <div class="lang">
+        <span class="lang__en lang-active" data-lang="en">en</span>
+        <span class="lang__slash"> / </span>
+        <span class="lang__ru" data-lang="ru">ru</span>
+      </div>
+    </div>
+  </header>
+  <main class="main">
+    <section class="intro">
+      <div class="container intro__wrapper">
+        <h1 class="intro__title">Explore <span>birds world</span></h1>
+        <p class="intro__description"></p>
+      </div>
+    </section>
+    <section class="gallery">
+      <div class="container gallery__wrapper">
+        <h2 class="gallery__title">Gallery</h2>
+        <p class="gallery__descp">Take a deep dive into the remarkable lives of birds with this dynamic natural history resource.</p>
+      </div>
+      <div class="birds-wrapper"></div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container footer__wrapper">
+      <span class="icon-github"></span>
+      <span class="year">2022</span>
+      <span class="icon-rsschool"></span>
+    </div>
+  </footer>
+  <div class="video-wrapper">
+    <video class="bg-video" playsinline autoplay  muted loop id="bgvid">
+      <source src="./assets/video/videoplayback.webm" type="video/webm">
+      <source src="polina.mp4" type="video/mp4">
+    </video>
+    <div class="bg-overlay"></div>
+  </div>
+  <script src="./data/contentLang.js"></script>
+  <script src="./js/intro-page.js"></script>
+  
+  <script src="./js/gallary.js" type="module"></script>
+  <script src="./js/lang.js" type="module"></script> 
+  
+</body>
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../scss/main.css">
+  <link rel="shortcut icon" href="#" type="image/x-icon">
+  <title>Document</title>
+</head>
+<body class="quiz-page">
+  <header>
+    <div class="container header__wrapper">
+      <a href="../index.html" class="logo">SongBird</a>
+      <div class="score-wrap">
+        <span>Score: </span>
+        <span class="score">0</span>
+      </div>
+    </div>
+  </header>
+  <main class="quiz-page main">
+    <section class="categories">
+      <div class="container categories__wrapper">
+        <ul class="categories-list">
+          <li class="category">Разминка</li>
+          <li class="category">Воробьиные</li>
+          <li class="category">Лесные птицы</li>
+          <li class="category">Певчие птицы</li>
+          <li class="category">Хищные птицы</li>
+          <li class="category">Морские птицы</li>
+        </ul>
+      </div>
+    </section>
+    <section class="question">
+      <div class="container question__wrapper">
+        <img class = "q__img" src="../assets/img/unknown-bird.jpg" alt="unknown bird img">
+        <div class="q__text-container">
+          <div class="q__name">******</div>
+          <div class="audio-player-main">
+            <div class="audio-controls">
+              <button class="btn audio-play a-play"></button>
+            </div>
+            <div class="audio-range">
+                <div class="audio-timeline">
+                  <div class="audio-progress"></div>
+                </div>
+                <div class="audio-times">
+                  <span class="audio-current-time">0:00</span>
+                  <span class="audio-duration"></span>
+                </div>
+            </div>
+            <div class="volume">
+              <span class="volume__num">100</span>
+              <span class="volume-range">
+                <span class="volume-range_active"></span>
+              </span>
+              <span class="icon volume-icon volume-on"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="row">
+      <div class="container">
+        <section class="answers">
+          <div class="answers__wrapper">
+            <ul class="answers-list">
+              <!-- <li class="answer error">Жаворонок</li>
+              <li class="answer correct">Соловей</li>
+              <li class="answer">Скворец</li>
+              <li class="answer">Иволга</li>
+              <li class="answer">Свиристель</li>
+              <li class="answer">Щегол</li> -->
+            </ul>
+          </div>
+        </section>
+        <section class="correct-asnwer">
+          <div class="select-answer">
+            <p>Послушайте плеер.</p>
+            <p> Выберите птицу из списка</p>
+          </div>
+          <div class="asnwer__info">
+            <img class="correct-asnwer__img" src="../assets/img/unknown-bird.jpg" alt="">
+            <div class="correct-asnwer__info">
+              <p class="correct-asnwer__bird-name">Swarrow</p>
+              <p class="correct-asnwer__bird-specie">Corvus corax</p>
+              <div class="audio-player-main">
+                <div class="audio-controls">
+                  <button class="btn audio-play a-play"></button>
+                </div>
+                <div class="audio-range">
+                    <div class="audio-timeline">
+                      <div class="audio-progress"></div>
+                    </div>
+                    <div class="audio-times">
+                      <span class="audio-current-time">0:00</span>
+                      <span class="audio-duration"></span>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <div class="correct-asnwer__descrp">
+              Ворон – крупная птица. Длина тела достигает 70 сантиметров, размах крыльев – до полутора метров. Вороны населяют окрестности Тауэра. В Англии бытует поверье, что в день, когда черные вороны улетят от Тауэра, монархия рухнет.
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+    <div class="button">
+      <div class="container">
+        <!-- <button class="btn-next">Next Level</button> -->
+        <a class="btn-next">Next Level</a>
+      </div>
+    </div>
+  </main>
+  <script src="../data/contentLang.js"></script>
+  <script src="../data/birds-en-f.js"></script>
+  <script src="../data/birds-ru-f.js"></script>
+  <script src="../js/tmp.js"></script>
+  <script src="../js/quiz.js"></script>
+</body>
+</html>

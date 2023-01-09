@@ -1,0 +1,79 @@
+html{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 10px;
+  height: 100vh;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+*,
+*::after,
+*::before{
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+::-webkit-scrollbar {
+  width: 5px;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-track {
+ // background: rgba(0,0,0,.5);
+  background: #303032;
+}
+::-webkit-scrollbar-thumb {
+  background: #8c8a8a;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #8c8a8a;
+}
+// ::-moz-selection { /* Code for Firefox */
+//   color: #fff;
+ 
+// }
+
+// ::selection {
+//   color: #fff;
+
+// }
+// ::-webkit-scrollbar {
+//   width: 0;  /* Remove scrollbar space */
+//   background: transparent;  /* Optional: just make scrollbar invisible */
+// }
+// /* Optional: show position indicator in red */
+// ::-webkit-scrollbar-thumb {
+//   //background: #FF0000;
+// }
+*,
+*::after,
+*::before{
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  height: 100vh;
+  font-size: 1.6rem;
+  color: $text-color-light;
+  @extend %font-prim;
+  overflow-x: hidden;
+}
+
+ul{
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+.container{
+  max-width: 1230px;
+  margin: 0 auto;
+  padding-left: 10px;
+  padding-right: 10px;
+}

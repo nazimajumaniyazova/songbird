@@ -1,0 +1,21 @@
+@import "./base/typography";
+@import "./base/modal";
+//utils
+@import "./utils/mixins";
+@import "./utils/placeholders";
+//base
+@import "./base/variables";
+@import "./base/global";
+@import "./base/icons";
+@import "./base/preloader";
+
+
+//components
+@import "./components/header";
+@import "./components/footer";
+@import "./components/intro";
+@import "./components/gallery";
+//pages
+@import "./pages/home";
+@import "./pages/quiz-page";
+

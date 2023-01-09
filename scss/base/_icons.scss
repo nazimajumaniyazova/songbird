@@ -1,0 +1,56 @@
+.sound-icon,
+.icon-github,
+.icon-rsschool,
+.volume-icon{
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  mask-position: center;
+  mask-size: cover;
+  mask-repeat: no-repeat;
+  cursor: pointer;
+  background-color: #ffffff;
+  transition: all .3s ease;
+  &:hover{
+    transform: scale(1.1);
+  }
+  @media (max-width: 774px) {
+    width: 20px;
+    height: 20px;
+  }
+}
+.sound-icon{
+  @media (max-width: 774px) {
+    font-size: 3rem;
+  }
+}
+.icon-sound-on {
+  mask-image: url("./../assets/img/sound-on.svg");
+}
+
+.icon-sound-off {
+  mask-image: url("./../assets/img/sound-off.svg");
+}
+
+.icon-rsschool {
+  width: 60px;
+  height: 50px;
+  mask-size: auto;
+}
+.icon-github {
+  mask-image: url("./../assets/img/github.svg");
+}
+.icon-rsschool {
+  mask-image: url("./../assets/img/rs_school_js.svg");
+}
+.volume-icon{
+  width: 25px;
+  height: 25px;
+  opacity: .8;
+}
+.volume-on{
+  mask-image: url("./../assets/img/sound-on.svg");
+}
+.volume-off{
+  mask-image: url("./../assets/img/sound-off.svg");
+}
