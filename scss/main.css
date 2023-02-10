@@ -174,9 +174,9 @@ a {
 }
 @media (max-width: 774px) {
   .sound-icon,
-.icon-github,
-.icon-rsschool,
-.volume-icon {
+  .icon-github,
+  .icon-rsschool,
+  .volume-icon {
     width: 20px;
     height: 20px;
   }
@@ -254,8 +254,7 @@ a {
   margin-top: -35px;
   margin-left: -35px;
   text-align: center;
-  -webkit-animation: preloader-rotate 2s infinite linear;
-          animation: preloader-rotate 2s infinite linear;
+  animation: preloader-rotate 2s infinite linear;
 }
 
 .preloader__item {
@@ -266,34 +265,18 @@ a {
   border-radius: 100%;
   width: 35px;
   height: 35px;
-  -webkit-animation: preloader-bounce 2s infinite ease-in-out;
-          animation: preloader-bounce 2s infinite ease-in-out;
+  animation: preloader-bounce 2s infinite ease-in-out;
 }
 
 .preloader__item:last-child {
   top: auto;
   bottom: 0;
-  -webkit-animation-delay: -1s;
-          animation-delay: -1s;
-}
-
-@-webkit-keyframes preloader-rotate {
-  100% {
-    transform: rotate(360deg);
-  }
+  animation-delay: -1s;
 }
 
 @keyframes preloader-rotate {
   100% {
     transform: rotate(360deg);
-  }
-}
-@-webkit-keyframes preloader-bounce {
-  0%, 100% {
-    transform: scale(0);
-  }
-  50% {
-    transform: scale(1);
   }
 }
 @keyframes preloader-bounce {
@@ -631,6 +614,40 @@ img {
   line-height: 1.2;
 }
 
+.scroll {
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  width: 50px;
+  height: 50px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  animation: down 1.5s infinite;
+  -webkit-animation: down 1.5s infinite;
+}
+.scroll::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 12px;
+  height: 12px;
+  border-left: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+  transform: translate(-50%, -70%) rotate(-45deg);
+}
+
+@keyframes down {
+  0% {
+    transform: translate(0);
+  }
+  20% {
+    transform: translateY(15px);
+  }
+  40% {
+    transform: translate(0);
+  }
+}
 .bg-video {
   -o-object-fit: cover;
      object-fit: cover;
