@@ -24,6 +24,11 @@
     font-size: 3rem;
   }
 }
+.icon-sound-on,
+.icon-sound-off {
+  width: 25px;
+  height: 25px;
+}
 .icon-sound-on {
   mask-image: url("./../assets/img/sound-on.svg");
 }
