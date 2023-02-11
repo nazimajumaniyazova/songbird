@@ -6,6 +6,6 @@ export  default class Module1{
   }
 
   getLang(lang){
-    console.log(lang)
+    
   }
 }
