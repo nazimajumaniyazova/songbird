@@ -630,6 +630,7 @@ img {
   border-radius: 50%;
   animation: down 1.5s infinite;
   -webkit-animation: down 1.5s infinite;
+  opacity: 1;
 }
 .scroll::before {
   content: "";

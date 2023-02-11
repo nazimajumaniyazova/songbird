@@ -1,1 +1,0 @@
-let tmpScore = 0;
